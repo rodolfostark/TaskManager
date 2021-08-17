@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,6 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    // methods for formating the command to print at screen
+    QString get_standart_process_output();
+    QString get_filtered_procces_output(QString command2execute);
+
+    QString standart_bash_command = "ps -auf ";
+    QString filter_bash_arguments = "| grep ";
+
+    QString get_filter_command(QString content2filter);
 private:
     Ui::MainWindow *ui;
 };

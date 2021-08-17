@@ -4,6 +4,8 @@
 #include <QString>
 #include <utils.h>
 
+using namespace std;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -18,5 +20,23 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+QString MainWindow::get_filter_command(QString content2filter)
+{
+    return standart_bash_command + filter_bash_arguments + content2filter;
+}
+
+QString MainWindow::get_standart_process_output()
+{
+    return standart_bash_command;
+}
+
+QString MainWindow::get_filtered_procces_output(QString command2execute)
+{
+    string command = command2execute.toStdString();
+    string first_output = exec(command.c_str());
+    QString output = QString::fromStdString(first_output);
+    return output;
 }
 
