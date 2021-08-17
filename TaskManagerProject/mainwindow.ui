@@ -14,16 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="process_windowTableView">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>721</width>
-      <height>231</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="processID_label">
     <property name="geometry">
      <rect>
@@ -184,6 +174,20 @@
     </property>
     <property name="text">
      <string>filtrar</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="processes_plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>24</y>
+      <width>711</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;
+color: green;</string>
     </property>
    </widget>
   </widget>
