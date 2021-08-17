@@ -23,9 +23,12 @@ public:
 
     QString standart_bash_command = "ps -auf ";
     QString filter_bash_arguments = "| grep ";
+    bool filtered = false;
 
     QString get_filter_command(QString content2filter);
 private:
     Ui::MainWindow *ui;
+public slots:
+    void set_proccesses_list(QString processes_list, bool filtered);
 };
 #endif // MAINWINDOW_H

@@ -27,6 +27,15 @@ QString MainWindow::get_filter_command(QString content2filter)
     return standart_bash_command + filter_bash_arguments + content2filter;
 }
 
+void MainWindow::set_proccesses_list(QString processes_list, bool filtered)
+{
+
+    ui->processes_plainTextEdit->setPlainText(processes_list);
+    if(filtered) {
+        filtered = true;
+    }
+}
+
 QString MainWindow::get_standart_process_output()
 {
     return standart_bash_command;
