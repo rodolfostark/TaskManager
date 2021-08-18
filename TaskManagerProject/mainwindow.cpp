@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     // setting timer
     QTimer* process_timer = new QTimer(this);
     connect(process_timer, SIGNAL(timeout()), this, SLOT(set_processes_list()));
-    process_timer->start(100);
+    process_timer->start(50);
 }
 
 MainWindow::~MainWindow()
@@ -79,4 +79,28 @@ void MainWindow::validate_filter()
 }
 
 
+
+
+void MainWindow::on_killPushButton_clicked()
+{
+    if(!ui->PID_lineEdit->text().isEmpty()) {
+        kill(ui->PID_lineEdit->text().toInt(), SIGKILL);
+    }
+}
+
+
+void MainWindow::on_stopPushButton_clicked()
+{
+    if(!ui->PID_lineEdit->text().isEmpty()) {
+        kill(ui->PID_lineEdit->text().toInt(), SIGSTOP);
+    }
+}
+
+
+void MainWindow::on_continuePushButton_clicked()
+{
+    if(!ui->PID_lineEdit->text().isEmpty()) {
+        kill(ui->PID_lineEdit->text().toInt(), SIGCONT);
+    }
+}
 

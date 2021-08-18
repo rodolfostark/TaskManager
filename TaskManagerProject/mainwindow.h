@@ -1,6 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <iostream>
+#include <signal.h> // definitions of the interruptions signals (like kill() )
+
 #include <QMainWindow>
 #include <QTimer>
 #include <QString>
@@ -32,5 +35,9 @@ private:
     Ui::MainWindow *ui;
 public slots:
     void set_processes_list();
+private slots:
+    void on_killPushButton_clicked();
+    void on_stopPushButton_clicked();
+    void on_continuePushButton_clicked();
 };
 #endif // MAINWINDOW_H

@@ -173,8 +173,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black;
-color: green;</string>
+     <string notr="true">background-color: #262835;
+color: lightgreen;
+font-family:Courier;</string>
     </property>
    </widget>
    <widget class="QLabel" name="filter_label">
