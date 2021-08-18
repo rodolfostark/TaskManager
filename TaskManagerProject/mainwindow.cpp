@@ -104,3 +104,23 @@ void MainWindow::on_continuePushButton_clicked()
     }
 }
 
+
+void MainWindow::on_setPriorityPushButton_clicked()
+{
+    if(!ui->PID_lineEdit->text().isEmpty() && !ui->setPriority_lineEdit->text().isEmpty()) {
+        setpriority(PRIO_PROCESS, ui->PID_lineEdit->text().toInt(), ui->setPriority_lineEdit->text().toInt());
+    }
+}
+
+
+void MainWindow::on_setCpuPushButton_clicked()
+{
+    if(!ui->PID_lineEdit->text().isEmpty() && !ui->setCpu_lineEdit->text().isEmpty()) {
+        cpu_set_t  mask;
+        CPU_ZERO(&mask);
+        CPU_SET(ui->setCpu_lineEdit->text().toInt(), &mask);    // alocar na CPU 0
+
+        sched_setaffinity(ui->PID_lineEdit->text().toInt(), sizeof(mask), &mask);
+    }
+}
+

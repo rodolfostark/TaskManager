@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>628</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="processID_label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>270</y>
+      <x>260</x>
+      <y>370</y>
       <width>141</width>
       <height>21</height>
      </rect>
@@ -35,8 +35,8 @@
    <widget class="QPushButton" name="killPushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>370</y>
+      <x>190</x>
+      <y>440</y>
       <width>106</width>
       <height>30</height>
      </rect>
@@ -48,8 +48,8 @@
    <widget class="QPushButton" name="stopPushButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>370</y>
+      <x>360</x>
+      <y>440</y>
       <width>106</width>
       <height>30</height>
      </rect>
@@ -61,8 +61,8 @@
    <widget class="QPushButton" name="continuePushButton">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>370</y>
+      <x>540</x>
+      <y>440</y>
       <width>106</width>
       <height>30</height>
      </rect>
@@ -74,8 +74,8 @@
    <widget class="QLineEdit" name="PID_lineEdit">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>270</y>
+      <x>410</x>
+      <y>370</y>
       <width>113</width>
       <height>29</height>
      </rect>
@@ -85,7 +85,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>460</y>
+      <y>500</y>
       <width>106</width>
       <height>30</height>
      </rect>
@@ -98,7 +98,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>500</y>
+      <y>540</y>
       <width>106</width>
       <height>30</height>
      </rect>
@@ -111,7 +111,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>460</y>
+      <y>500</y>
       <width>113</width>
       <height>29</height>
      </rect>
@@ -121,7 +121,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>500</y>
+      <y>540</y>
       <width>113</width>
       <height>29</height>
      </rect>
@@ -130,8 +130,8 @@
    <widget class="QLabel" name="basicActions_label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>330</y>
+      <x>360</x>
+      <y>410</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -144,7 +144,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>430</y>
+      <y>470</y>
       <width>151</width>
       <height>21</height>
      </rect>
@@ -157,7 +157,7 @@
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>480</y>
+      <y>520</y>
       <width>361</width>
       <height>29</height>
      </rect>
@@ -169,7 +169,7 @@
       <x>10</x>
       <y>24</y>
       <width>771</width>
-      <height>211</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -182,7 +182,7 @@ font-family:Courier;</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>480</y>
+      <y>520</y>
       <width>80</width>
       <height>21</height>
      </rect>
