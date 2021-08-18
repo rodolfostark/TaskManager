@@ -22,7 +22,7 @@ public:
     QString get_process_output(QString command2execute);
 
     QString standart_bash_command = "ps -auf ";
-    QString filter_bash_arguments = "| grep ";
+    QString filter_bash_arguments = "| head -1; ps -auf | grep ";
 
     bool filtered = false;
     void validate_filter();
