@@ -156,24 +156,11 @@
    <widget class="QLineEdit" name="filter_lineEdit">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>400</x>
       <y>480</y>
       <width>361</width>
       <height>29</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="filtrarPushButton">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>480</y>
-      <width>106</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>filtrar</string>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="processes_plainTextEdit">
@@ -188,6 +175,19 @@
     <property name="styleSheet">
      <string notr="true">background-color: black;
 color: green;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="filter_label">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>480</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter:</string>
     </property>
    </widget>
   </widget>

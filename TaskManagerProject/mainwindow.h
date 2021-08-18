@@ -18,17 +18,19 @@ public:
     ~MainWindow();
 
     // methods for formating the command to print at screen
-    QString get_standart_process_output();
-    QString get_filtered_procces_output(QString command2execute);
+    QString get_standart_process_command();
+    QString get_process_output(QString command2execute);
 
     QString standart_bash_command = "ps -auf ";
     QString filter_bash_arguments = "| grep ";
-    bool filtered = false;
 
-    QString get_filter_command(QString content2filter);
+    bool filtered = false;
+    void validate_filter();
+
+    QString get_filter_command();
 private:
     Ui::MainWindow *ui;
 public slots:
-    void set_proccesses_list(QString processes_list, bool filtered);
+    void set_processes_list();
 };
 #endif // MAINWINDOW_H
